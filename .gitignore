@@ -1,0 +1,80 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+
+# Logs
+logs/
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Spring Boot
+spring.log
+
+# Environment Files
+.env
+.env.*
+
+# Application Secrets
+application-local.yml
+application-prod.yml
+application-secret.yml
+
+# JWT Secrets
+jwt-secret.txt
+
+# Database Files
+*.db
+*.sqlite
+
+# Temporary Files
+temp/
+tmp/
+
+# Generated Reports
+coverage/
+reports/
+
+# Test Outputs
+surefire-reports/
+
+# Java
+*.class
+
+# Package Files
+*.jar
+*.war
+
+# Node Modules (if frontend added later)
+node_modules/
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+desktop.ini
