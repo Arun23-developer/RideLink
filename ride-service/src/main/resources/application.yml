@@ -1,0 +1,34 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ride-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ride_db
+    username: postgres
+    password: arun@2001
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+# Inter-service communication URLs
+services:
+  auth-service:
+    url: http://localhost:8081
+  driver-service:
+    url: http://localhost:8082
+  payment-service:
+    url: http://localhost:8084
+
+# Logging
+logging:
+  level:
+    com.ridelink.rideservice: DEBUG
+    org.springframework.web: INFO
